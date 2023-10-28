@@ -1,0 +1,335 @@
+/* Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+
+#uniPadding{
+    padding: 0 60px 0 60px;
+}
+
+.navbar{
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo>a>img{
+    width: 90px;
+    height: 25px;
+}
+.nav{
+    display: flex;
+    gap: 2rem;
+}
+.navLists{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    position: relative;
+}
+.navLists:before{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 1px;
+    width: 0;
+    background: white;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+.navLists:hover:before {
+    width: 100%;
+}
+.navright{
+    display: flex;
+    gap: 1.5rem;
+    color: white;
+    align-items: center;
+}
+
+.navright>.host{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+
+}
+.globe{
+    color: white;
+}
+.login{
+    background-color: white;
+    padding: 5px 13px;
+    border-radius: 25px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+.fa-bars{
+    color: rgb(89, 89, 89);
+}
+.fa-user{
+    background-color: rgb(184, 184, 184);
+    color: rgb(89, 89, 89);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+
+/* Banner PArt */
+
+.banner{
+    background-color: black;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+}
+.bannerImg{
+    background-image: url(imgs/BigBanner.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.notSure{
+    bottom: 100px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.notSure h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+}
+.notSure a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: purple;
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+
+/* inspiron section */
+
+.inspiron{
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    
+}
+.inspiron h2{
+    font-weight: 500;
+}
+
+.cardsContainer{
+    margin-top: 20px;
+    /* background-color: aqua; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+   
+    
+}
+
+.card{
+    /* background-color: pink; */
+    width: 270px;
+    height: 300px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+}
+.card>img{
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.card>div{
+    margin-top: 12px;
+    padding-left: 20px;
+}
+.card h1{
+    color: white;
+    font-size: 22px;
+    font-weight: 350;
+}
+.card span{
+    color: white;
+    font-size: 12px;
+}
+
+
+
+/* experience */
+
+.experience{
+    /* background-color: red; */
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+.experience h2{
+    font-weight: 500;
+}
+.exCards{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.exCards>div{
+    width: 48%;
+    /* background-color: aqua; */
+    height: 100%;
+}
+.exCards>div:first-child{
+    background-image: url(imgs/cave.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+.exCards>div:last-child{
+    background-image: url(imgs/man.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+.exCards div h1{
+    color: white;
+    width: 200px;
+    font-size: 30px;
+    font-weight: 450;
+
+}
+.exCards div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* giftCards */
+
+.giftCards{
+    width: 100%;
+    /* background-color: red; */
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px
+}
+.giftText{
+    /* background-color: blue; */
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    justify-content: center;
+}
+.gifth1{
+    width: 200px;
+    /* background-color: red; */
+    font-size: 32px;
+    font-weight: 550;
+}
+.learnMore{
+    background-color: black;
+    padding: 7px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.giftImg{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.giftImg >img{
+    width: 800px
+
+}
+
+
+
+/* woman */
+
+.woman{
+    /* background-color: red; */
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.womanImg{
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/woman.jpg);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+    
+}
+.womanImg>div{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    justify-content: space-evenly;
+}
+.womanImg h1{
+    font-size: 80px;
+    color: white;
+    font-weight: 450;
+
+}
+.whitebtn{
+    padding: 10px 15px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    border-radius: 5px;
+}
